@@ -12,7 +12,7 @@ class IPerson(metaclass=ABCMeta):
 class Student(IPerson):
 
     def __init__(self):
-        self.name = 'Student name'
+        self.name = 'Student tag'
 
     def person_method(self):
         print(f'I am a {self.name}')
@@ -21,7 +21,7 @@ class Student(IPerson):
 class Teacher(IPerson):
 
     def __init__(self):
-        self.name = 'Teacher name'
+        self.name = 'Teacher tag'
 
     def person_method(self):
         print(f'I am a {self.name}')

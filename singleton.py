@@ -16,7 +16,7 @@ class PersonSingleton(IPerson):
     @staticmethod
     def get_instance():
         if PersonSingleton.__instance is None:
-            PersonSingleton('Default name', 0)
+            PersonSingleton('Default tag', 0)
         return PersonSingleton.__instance
 
     def __init__(self, name, age):
@@ -29,7 +29,7 @@ class PersonSingleton(IPerson):
 
     @staticmethod
     def get_data():
-        print(f'Name: {PersonSingleton.__instance.name}, '
+        print(f'Name: {PersonSingleton.__instance.tag}, '
               f'age: {PersonSingleton.__instance.age}')
 
 
