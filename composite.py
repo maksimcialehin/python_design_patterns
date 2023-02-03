@@ -50,7 +50,6 @@ class ParentDepartment(IDepartment):
         print(f'Total number of employees: {self.employees}')
 
 
-
 dept1 = Accounting(20)
 dept2 = Development(17)
 
