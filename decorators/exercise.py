@@ -24,7 +24,7 @@ class ColoredShape:
 
     def resize(self, factor):
         # note that a Square doesn't have resize()
-        if getattr(self.shape, 'resize', None):
+        if hasattr(self.shape, 'resize'):
             self.shape.resize(factor)
 
     def __str__(self):
